@@ -1,0 +1,45 @@
+[debug] [2023-10-21T16:33:14.103Z] ----------------------------------------------------------------------
+[debug] [2023-10-21T16:33:14.105Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-10-21T16:33:14.105Z] CLI Version:   12.7.0
+[debug] [2023-10-21T16:33:14.106Z] Platform:      linux
+[debug] [2023-10-21T16:33:14.106Z] Node Version:  v18.18.2
+[debug] [2023-10-21T16:33:14.106Z] Time:          Sat Oct 21 2023 13:33:14 GMT-0300 (Brasilia Standard Time)
+[debug] [2023-10-21T16:33:14.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-21T16:33:14.243Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-21T16:33:14.243Z] > authorizing via signed-in user (ruandupg@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-10-21T16:33:14.251Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-21T16:33:14.251Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-10-21T16:33:14.251Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-10-21T16:33:14.267Z] [hub] writing locator at /tmp/hub-ruan-pereira-mattos.json
+[debug] [2023-10-21T16:33:14.287Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/ruan-pereira-mattos/sites 
+[debug] [2023-10-21T16:33:15.624Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/ruan-pereira-mattos/sites 200
+[debug] [2023-10-21T16:33:15.624Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/ruan-pereira-mattos/sites {"sites":[{"name":"projects/ruan-pereira-mattos/sites/promosdaneca","defaultUrl":"https://promosdaneca.web.app","type":"USER_SITE"},{"name":"projects/ruan-pereira-mattos/sites/ruan-pereira-mattos","defaultUrl":"https://ruan-pereira-mattos.web.app","appId":"1:317244589062:web:dc4e84a8c919f376f26f87","type":"DEFAULT_SITE"},{"name":"projects/ruan-pereira-mattos/sites/tsara-cigana-rosalina","defaultUrl":"https://tsara-cigana-rosalina.web.app","appId":"1:317244589062:web:7d4afbfd05c53cf5f26f87","type":"USER_SITE"}]}
+[debug] [2023-10-21T16:33:15.625Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ruan-pereira-mattos/webApps/1:317244589062:web:dc4e84a8c919f376f26f87/config [none]
+[debug] [2023-10-21T16:33:16.473Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ruan-pereira-mattos/webApps/1:317244589062:web:dc4e84a8c919f376f26f87/config 200
+[debug] [2023-10-21T16:33:16.473Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ruan-pereira-mattos/webApps/1:317244589062:web:dc4e84a8c919f376f26f87/config {"projectId":"ruan-pereira-mattos","appId":"1:317244589062:web:dc4e84a8c919f376f26f87","databaseURL":"https://ruan-pereira-mattos-default-rtdb.firebaseio.com","storageBucket":"ruan-pereira-mattos.appspot.com","locationId":"us-central","apiKey":"AIzaSyDSmHTMQep0QnzUSUlvRZ7YBZIUEQ_rufc","authDomain":"ruan-pereira-mattos.firebaseapp.com","messagingSenderId":"317244589062","measurementId":"G-DCM973P1CP"}
+[debug] [2023-10-21T16:33:16.478Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ruan-pereira-mattos [none]
+[debug] [2023-10-21T16:33:16.928Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ruan-pereira-mattos 200
+[debug] [2023-10-21T16:33:16.928Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ruan-pereira-mattos {"projectId":"ruan-pereira-mattos","projectNumber":"317244589062","displayName":"Ruan Pereira Mattos","name":"projects/ruan-pereira-mattos","resources":{"hostingSite":"ruan-pereira-mattos","realtimeDatabaseInstance":"ruan-pereira-mattos-default-rtdb","storageBucket":"ruan-pereira-mattos.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_c9947bbe-2e7d-4fee-a840-72ca96718d8a"}
+[info] i  hosting[ruan-pereira-mattos]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[ruan-pereira-mattos]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2023:16:33:25 +0000] "GET / HTTP/1.1" 200 289 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2023:16:33:25 +0000] \"GET / HTTP/1.1\" 200 289 \"-\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2023:16:33:25 +0000] "GET /style.css HTTP/1.1" 200 161 "http://127.0.0.1:5000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2023:16:33:25 +0000] \"GET /style.css HTTP/1.1\" 200 161 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [21/Oct/2023:16:33:25 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [21/Oct/2023:16:33:25 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 OPR/103.0.0.0\""}}
