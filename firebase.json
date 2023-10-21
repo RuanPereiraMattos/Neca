@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "promosdaneca",
     "public":"public",
     "ignore": [
       "firebase.json",
